@@ -2,6 +2,8 @@ FROM garland/xampp-base
 
 WORKDIR /opt/lampp/htdocs/
 
+USER root
+
 # Install DVWA
 RUN wget https://github.com/RandomStorm/DVWA/archive/v1.0.8.zip
 RUN unzip v1.0.8.zip
